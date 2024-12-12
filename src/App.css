@@ -1,0 +1,131 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-input button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #0056b3;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.filters button:hover {
+  background: #e0e0e0;
+}
+
+.filters .active {
+  background: #007bff;
+  color: white;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.task-list li input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.task-list li input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-list li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.task-list li button:hover {
+  background: #0056b3;
+}
+
+.task-list li button:nth-child(3) {
+  background: #28a745;
+}
+
+.task-list li button:nth-child(3):hover {
+  background: #1e7e34;
+}
+
+.task-list li button:nth-child(4) {
+  background: #dc3545;
+}
+
+.task-list li button:nth-child(4):hover {
+  background: #c82333;
+}
